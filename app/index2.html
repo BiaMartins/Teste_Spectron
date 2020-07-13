@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<script src="dist/clipboard.min.js"></script>
+<title>Bia</title>
+    <form action="/">
+
+    <legend>MODELO E CLASSES</legend> <br/>
+    <fieldset>
+        <label for="name">Modelo </label>
+        <input type="file" value="file" name="file" />
+        <input id="modelo" type="hidden" value="hidden" name="hidden" /> <br />
+        <br/>
+
+        <label for="email">Classe </label>
+        <input type="file" value="file" name="file" />
+        <input type="hidden" value="hidden" name="hidden" /> <br />
+    </fieldset>
+   
+    <fieldset>
+        <legend>CAIXA DE SELEÇÃO </legend> <br/>
+        <label>Checkbox 1: 
+            <input type="checkbox" value="checkbox1" name="checkgroup[]" /> </label>
+        <label>Checkbox 2: 
+            <input type="checkbox" value="checkbox2" name="checkgroup[]" /></label>
+        <label>Checkbox 3: 
+            <input type="checkbox" value="checkbox3" name="checkgroup[]" /></label>
+        <label>Checkbox 4: 
+            <input type="checkbox" value="checkbox4" name="checkgroup[]" /></label>
+    </fieldset>
+<br/>
+<br/>
+    <fieldset>
+        <label>Cor</label>
+        <input type="color" value="color" name="color" /> <br/>
+        <br/>
+
+        <label>Date, Time (Local): </label>
+        <input type="datetime-local" value="datetime" name="datetime" /> <br/> 
+        <br/>
+
+        <label>Adicione a imagem  </label>
+        <input type="image" value="image" name="image" /><br/>
+        <br/>
+
+        <label>Month: </label>
+        <input type="month" value="month" name="month" /><br/>
+        <br/>
+
+        <label>Number: </label>
+        <input type="number" value="number" name="number" /><br/>
+        <br/>
+
+        <label>Single Radio: 
+        <input type="radio" value="radio" name="radio" /></label> <br/>
+        <br/>
+        <label>Text: </label>
+        <input type="text"  id= "copy-from-clipboard" class="copy-clipping" name="text" value="texto" />
+    </fieldset>
+    <br/>
+    <br/>
+    <fieldset>
+        <legend>Group of Radios: </legend>
+        <label>Radio 1: 
+            <input id="radio1" type="radio" value="radio1" name="radiogroup" /></label>
+        <label>Radio 2: 
+            <input type="radio" value="radio2" name="radiogroup" /></label>
+        <label>Radio 3: 
+            <input type="radio" value="radio3" name="radiogroup" /></label>
+        <label>Radio 4: 
+            <input type="radio" value="radio4" name="radiogroup" /></label>
+
+        <br>
+        <br>
+
+        <legend>Datalist: </legend>
+        <input type="text" name="datalist" list="samplelist">
+        <datalist id="samplelist">
+            <option>Something</option>
+            <option>Something else</option>
+            <option>Another thing</option>
+        </datalist>
+        <br/>
+        <br/>
+    
+        <label for="A textarea!">Campo obrigatório:</label><br />
+        <input id="enviar" class="clipping-text"  type="text" name="Campo obrigatório" pattern="^@[A-Za-z0-9_]{1,15}$" required>
+
+        <button id="go"  type="submit"  value="Enviar" >OK</button> 
+    </fieldset>
+    <br/>
+
+    <fieldset>
+    <label>Select 1: </label>
+    <select id= "b" class="clippings-list-item " name="select" size="1">
+        <option>Test1</option>
+        <option>Test2</option>
+    </select><br/>
+    <br/>
+
+    <label>Select 2: </label>
+    <select name="select1" size="1">
+        <option>Test1</option>
+        <option>Test2</option>
+    </select><br/>
+    <br/>
+
+    <label>Select Groups: </label>
+    <select name="select3" size="1" multiple>
+        <optgroup label="First Group">
+            <option>Test</option>
+            <option>Test</option>
+        </optgroup>
+        <optgroup label="Second Group">
+            <option>Test</option>
+            <option>Test</option>
+        </optgroup>
+        <optgroup label="Third Group">
+            <option>Test</option>
+            <option>Test</option>
+        </optgroup>
+    </select>
+</fieldset>
+
+</form>
+
